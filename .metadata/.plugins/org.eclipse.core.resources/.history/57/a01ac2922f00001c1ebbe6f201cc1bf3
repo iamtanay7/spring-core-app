@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="c" class="com.amdocs.training.model.Course">
+		<property name="courseName" value="Maths"></property>
+		<property name="fee" value="2000"></property>
+		<property name="description" value="Mathematics"></property>
+		<property name="resources" value="Textbooks"></property>
+	</bean>
+
+
+	<bean id="user" class="com.amdocs.training.model.User">
+		<property name="name" value="arti"/>
+	<property name="phone" value="6578"/>
+	<property name="email" value="arti@gmail.com"/>
+	<property name="address" value="pune"/>
+	<property name="course" ref="c"/>
+	</bean>
+	
+	
+
+</beans>
+

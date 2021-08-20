@@ -1,0 +1,5 @@
+package com.amdocs.training.config;
+
+public class BeanConfiguration {
+
+}
